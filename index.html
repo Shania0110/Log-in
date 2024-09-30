@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+<!-- MAIN DIV -->
+ <div class="flex items-center justify-center min-h-screen bg-gradient-to-tr from-purple-400 to-pink-400 font-sans">
+    <!-- CARD DIV -->
+     <div class="bg-white rounded-md flex flex-col items-center justify-center p-10 font-sans pt-11">
+        <img src="gear-solid.svg" alt="" class="w-20 h-20 rounded-full p-3"> 
+        
+        <h2 class="p-2 text-slate-900 font-semibold">Log In</h2>
+        <pre class="font-sans text-gray-600 ">Sign in to your account.
+        </pre>
+
+        <!-- USER INPUT -->
+         <div class="flex flex-col pt-4">
+            <div class="flex flex-row"> <!--username-->
+                <i class="fa-duotone fa-solid fa-user-tie pr-3 border-b-2 text-purple-500 border-purple-200"></i>
+                <input type="text" placeholder="Username" class="border-b-2 border-purple-200 outline-none" >
+            </div>
+
+            <div class="mt-7 flex flex-row"> <!--password-->
+                <i class="fa-solid fa-key pr-3 border-b-2 text-purple-500 border-purple-200"></i>
+                <input type="password" placeholder="Password" class="border-b-2 border-purple-200 outline-none">
+            </div>
+         </div>
+         <!-- Checkbox/Forgot pwd -->
+          <div class="flex flex-row space-x-16 pt-4">
+             <div class="flex flex-row justify-center items-center"> <!--Checkbox-->
+                 <input type="checkbox"><label for="remember-me" class="text-sm pl-2 text-gray-600">Remember me</label>
+             </div>
+             <a href="#" class="text-sm text-pink-500 hover:text-purple-500">Forgot password?</a>
+          </div>
+          <!-- Buttons -->
+           <div class="flex flex-col pt-8 space-y-2 pb-10">
+            <button class="border bg-purple-500 pt-2 pb-2 pl-32 pr-32 rounded-md hover:bg-purple-600 duration-150"><a href="#">LOG IN</a></button>
+            <button class="border bg-pink-500 pt-2 pb-2 pl-32 pr-32 rounded-md hover:bg-pink-600 duration-150"><a href="#">LOG IN</a></button>
+           </div>
+           <!-- Sign up link -->
+            <div class="text-sm">
+                <p>Don't have an account?<a href="#" class=" underline text-blue-800 hover:text-purple-500">Sign up</a></p>
+            </div>
+     </div>  <!--End of card div-->
+ </div>  <!--End of main div-->
+</body>
+</html>
